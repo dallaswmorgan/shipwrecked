@@ -11,7 +11,7 @@ Don't get wrecked!
 
 When playing Shipwrecked, users will:
 
-- [ ] Be able to start and manipulate gameplay intiuitively with key inputs
+- [ ] Be able to start and manipulate gameplay intuitively with key inputs
 - [ ] Navigate their character toward randomly generated coins
 - [ ] Trick mines into crashing into each other, thus blowing each other up
 - [ ] See how long they can last against an ever growing number of enemy mines
