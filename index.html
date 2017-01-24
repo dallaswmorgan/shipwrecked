@@ -3,10 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>Shipwrecked</title>
+    <script type="application/javascript" src="vendor/keymaster.js"></script>
     <script type="text/javascript" src='lib/bundle.js'></script>
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+
+    <script>
+     const soundID1 = "Thunder";
+     const soundID2 = "Coin";
+
+     const loadSound = () => {
+       createjs.Sound.registerSound("assets/mine-explosion.mp3", soundID1);
+       createjs.Sound.registerSound("assets/coin-collect.mp3", soundID2);
+     }
+
+     const playSound1 = () => {
+       createjs.Sound.play(soundID1);
+     }
+     const playSound2 = () => {
+       createjs.Sound.play(soundID2);
+     }
+   </script>
   </head>
-  <body>
+  <body onload="loadSound();">
     <canvas id="canvas"></canvas>
+    <button onclick="playSound1();" class="playSound">Play BOOM</button>
+    <button onclick="playSound2();" class="playSound">Play PLINK</button>
 
   </body>
 </html>
+<!-- <html>
+  <head>
+    <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script>
+      var soundID = "Thunder";
+
+      function loadSound () {
+        createjs.Sound.registerSound("assets/mine-explosion.mp3", soundID);
+      }
+
+      function playSound () {
+        createjs.Sound.play(soundID);
+      }
+    </script>
+  </head>
+  <body onload="loadSound();">
+  </body>
+</html> -->
