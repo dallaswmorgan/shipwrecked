@@ -6,7 +6,6 @@
     <script type="application/javascript" src="vendor/keymaster.js"></script>
     <script type="text/javascript" src='lib/bundle.js'></script>
     <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-
     <script>
      const soundID1 = "Thunder";
      const soundID2 = "Coin";
@@ -25,6 +24,7 @@
    </script>
   </head>
   <body onload="loadSound();">
+    <img id="boat" src="./assets/boat.png" display="none" height=50 width=25/>
     <canvas id="canvas"></canvas>
     <button onclick="playSound1();" class="playSound">Play BOOM</button>
     <button onclick="playSound2();" class="playSound">Play PLINK</button>
