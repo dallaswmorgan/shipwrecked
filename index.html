@@ -22,9 +22,10 @@
        createjs.Sound.play(soundID2);
      }
    </script>
+   <img id="mine" src="./assets/mine.png" height=0 width=0/>
+   <img id="boat" src="./assets/boat.png" display="none" height=0 width=0/>
   </head>
   <body onload="loadSound();">
-    <img id="boat" src="./assets/boat.png" display="none" height=50 width=25/>
     <canvas id="canvas"></canvas>
     <button onclick="playSound1();" class="playSound">Play BOOM</button>
     <button onclick="playSound2();" class="playSound">Play PLINK</button>
