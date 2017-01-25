@@ -1,0 +1,44 @@
+#background {
+  background: url('./assets/shipwrecked_background.jpg') no-repeat center center;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*height: 100%;*/
+  /*width: 100%;*/
+  max-height: px;
+  max-width: 1000px;
+  position: relative;
+}
+
+#body {
+  height: 98%;
+  width: 98%;
+  /*max-height: 75vh;*/
+  /*max-width: 75vw;*/
+  background-color: black;
+  font-family: 'Pirata One', cursive;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
+  /*background: url('./assets/shipwrecked_background.jpg') no-repeat center center fixed;*/
+  /*background-size: 100%;*/
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+}
+
+#body h1 {
+  /*position: relative;*/
+  z-index: 150;
+}
+#canvas {
+  /*position: absolute;*/
+  /*top: 30%;*/
+  /*left: 30%;*/
+  margin-top: 20%;
+  margin-bottom: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 70%;
+  height: 50%;
+}
