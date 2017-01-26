@@ -8,31 +8,35 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <script type="application/javascript" src="vendor/keymaster.js"></script>
     <script type="text/javascript" src='lib/bundle.js'></script>
-    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
     <script>
      const soundID1 = "Boom";
      const soundID2 = "Coin";
 
      const loadSound = () => {
-       createjs.Sound.registerSound("assets/mine-explosion.mp3", soundID1);
-       createjs.Sound.registerSound("assets/coin-collect.mp3", soundID2);
+      //  createjs.Sound.registerSound("assets/mine-explosion.mp3", soundID1);
+      //  createjs.Sound.registerSound("assets/coin-collect.mp3", soundID2);
+      noise.play()
      }
+
+
 
      const playSound1 = () => {
-       createjs.Sound.play(soundID1);
+      const boom = new Audio("assets/mine-explosion.mp3");
+      boom.play();
      }
      const playSound2 = () => {
-       createjs.Sound.play(soundID2);
+      const plink = new Audio("assets/coin-collect.mp3")
+      plink.play();
      }
    </script>
-   <img id="mine" src="./assets/mine.png" height=0 width=0/>
-   <img id="boat" src="./assets/boat.png" height=0 width=0/>
-   <img id="coin" src="./assets/coin.png" height=0 width=0/>
-   <img id="ocean" src="./assets/ocean.jpg" height=0 width=0/>
-   <img id="loss-message" src="./assets/loss-message.png" height=0 width=0/>
+   <img id="mine" class="game-img" src="./assets/mine.png" height=0 width=0/>
+   <img id="boat" class="game-img" src="./assets/boat.png" height=0 width=0/>
+   <img id="coin" class="game-img" src="./assets/coin.png" height=0 width=0/>
+   <img id="ocean" class="game-img" src="./assets/ocean.jpg" height=0 width=0/>
+   <img id="loss-message" class="game-img" src="./assets/loss-message.png" height=0 width=0/>
   </head>
 
-  <body id="body" onload="loadSound();">
+  <body id="body">
     <h1 id="hidden">Wrecked!</h1>
     <div id="background">
       <div id='canvas-holder'>
