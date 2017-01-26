@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html id="parent">
   <head>
     <meta charset="utf-8">
 
-    <title>Shipwrecked</title>
+    <title>Shipwrecked!</title>
     <link href="https://fonts.googleapis.com/css?family=Pirata+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
     <script type="application/javascript" src="vendor/keymaster.js"></script>
@@ -28,27 +28,32 @@
    <img id="mine" src="./assets/mine.png" height=0 width=0/>
    <img id="boat" src="./assets/boat.png" height=0 width=0/>
    <img id="coin" src="./assets/coin.png" height=0 width=0/>
-   <img id="explosion-1" src="./assets/explosion_1.png" height=0 width=0/>
-   <img id="explosion-2" src="./assets/explosion_2.png" height=0 width=0/>
    <img id="ocean" src="./assets/ocean.jpg" height=0 width=0/>
+   <img id="loss-message" src="./assets/loss-message.png" height=0 width=0/>
   </head>
 
   <body id="body" onload="loadSound();">
-    <!-- <h1>Shipwrecked</h1> -->
+    <h1 id="hidden">Wrecked!</h1>
     <div id="background">
       <div id='canvas-holder'>
         <div id='title-box'>
           <div id='intro-box'>
-            <h3>Collect <img src="./assets/coin.png" id='intro-coin'/></h3>
+            <h2>Collect <img src="./assets/coin.png" id='intro-coin'/></h2>
             <h1>Shipwrecked</h1>
-            <h3>Avoid <img src="./assets/mine.png" id='intro-mine'/></h3>
+            <h2>Avoid <img src="./assets/mine.png" id='intro-mine'/></h2>
           </div>
         </div>
         <canvas id="canvas"></canvas>
         <div id="directions-box">
           <div id='space-box'>
             <img src="./assets/space_key.png"/>
-            <h3>Start</h3>
+            <h3>Restart</h3>
+          </div>
+          <div id='score-box'>
+            <h3>Score: </h3>
+            <h3 id='score'></h3>
+            <h3>High Score:</h3>
+            <h3 id='high-score'></h3>
           </div>
           <div id='arrow-box'>
             <img src="./assets/arrow_keys.png"/>
