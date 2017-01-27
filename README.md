@@ -1,4 +1,7 @@
-#### SHIPWRECKED
+# SHIPWRECKED
+
+[Play Shipwrecked][shipwrecked-website]
+[shipwrecked-website]: https://dallaswmorgan.github.io/shipwrecked/
 
 ##Collect treasure
 Navigate your boat through perilous waters to collect floating dubloons
@@ -6,4 +9,4 @@ Navigate your boat through perilous waters to collect floating dubloons
 
 ##Avoid Enemies
 Escape from heat-seeking mines that move faster as they get closer. Trick them into blowing each other up!
-![shipwrecked-mines] (assets/shipwrecked-mines.png) 
+![shipwrecked-mines] (assets/shipwrecked-mines.png)
