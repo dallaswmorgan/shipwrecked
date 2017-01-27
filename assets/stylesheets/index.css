@@ -152,7 +152,7 @@ canvas-holder {
 #showing {
   position: relative;
   top: 300px;
-  left: 450px;
+  left: 350px;
   color: white;
   z-index: 100;
 }
